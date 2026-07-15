@@ -1,5 +1,10 @@
-nums = [2,6,4,1,34,67,54]
-n = len(nums)
+arr = [64, 34, 25, 12, 22, 11, 90]
+
+n = len(arr)
+
 for i in range(n):
-    for j in range(n-1-i):
-        if(num[i]<)
+    for j in range(0, n - i - 1):
+        if arr[j] > arr[j + 1]:
+            arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+print(arr)
